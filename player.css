@@ -1,0 +1,66 @@
+#title {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    align-items: center;
+    column-gap: 16px;
+    justify-content: space-between;
+    color: #b3b3b3;
+    background: transparent;
+    border-bottom: 2px solid #b3b3b3;
+
+}
+
+
+#title > #hash {
+    justify-content: left;
+   
+}
+
+#title > div {
+    background-color: brown;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+#duration {
+    color: #b3b3b3;
+    fill: currentcolor;
+
+}
+#song {
+    align-items: left;
+    justify-content: left;
+    background-color: aqua;
+    
+}
+.music {
+    height: 50px;
+    width: 100%;
+    column-gap: 16px;
+    display: grid;
+   grid-template-columns: repeat( 5 , 1fr );
+   
+}
+.music>div{
+background-color: blueviolet;
+border: 1px solid black;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+.music>.index{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.song > div{
+    font-size: x-small;
+}
+.song {
+    justify-content: space-around;
+}
+.songtext{
+    margin: 10px;
+}

@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+body {
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    margin: 0px;
+}
+
+.spotify-logo {
+    height: 60px;
+    width: 130px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.spotify-logo path {
+    fill: white;
+}
+
+.sidebar {
+    background-color: black;
+    color: #b3b3b3;
+    padding: 20px;
+    height: 90vh;
+    width: 250px;
+}
+
+.sidebar-name-container {
+    display: flex;
+    padding-left: 5px;
+    border-radius: 5px;
+    align-items: center;
+    height: 50px;
+}
+
+.sidebar-name-container:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar-name {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.playlist {
+    margin-top: 20px;
+}
+.content-container {
+    background-color: #101110;
+    height: 90vh;
+    width: 100%;
+    overflow: auto;
+    scrollbar-color: black;
+}
+.line {
+    background-color: white;
+}
+.bot-sticky-bar{
+    background-image: linear-gradient(90deg,#af2896,#509bf5);
+    height: fit-content;
+    padding: 1px 10px;
+    color: white;
+    width: 100%;
+}
+.row{
+    margin-left: 0px !important;
+}
+
+.preview{
+    text-transform: uppercase;
+    font-weight: 400;
+    
+}
+.bot-btn{
+    margin: auto;
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    color: black;
+}
+.right{
+    float: right;
+    margin-top: 5px;
+}
+.right:hover{
+    padding: 15px 45px;
+}
+.arrows {
+    color: #b3b3b3;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.arrow-container {
+    margin: 20px;
+}
+.nav_links a {
+    text-decoration: none;
+    color: #dadada;
+    font-weight: 700;
+    padding: .5rem 1.5rem;
+    font-size: .95rem;
+}
+.nav_links a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-container {
+    margin-bottom: 2px;
+}
+.top-nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #070707;
+    height: auto;
+}
+
+.user-choice-container {
+    display: flex;
+    margin: 25px;
+}
+.songBanner {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.songHeading {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.songName {
+    font-weight: bold;
+    color: white;
+    width: 150px;
+    height: 28px;
+    text-align: center;
+}
+
+.songItemContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.songItem {
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.songItem:hover {
+    background-color: rgb(51, 47, 47);
+}
+
+@media screen and (max-width: 767px) {
+    .sidebar {
+        height: 10vh;
+        width: 100%;
+    }
+    .controls {
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+    .spotify-logo {
+        display: none;
+    }
+    .content-container {
+        height: 80vh;
+    }
+    .sidebar-name-container {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+    }
+    #sidebar-name3 {
+        display: none;
+    }
+    #sidebar-name4 {
+        display: none;
+    }
+    .line {
+        display: none;
+    }
+    .my-playlist {
+        display: none;
+    }
+    .menu-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .arrows {
+        display: none;
+    }
+    .user-choice-container {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+    #myProgressBar {
+        width: 40vw;
+    }
+    #mainSongName {
+        margin-top: 8ekpx;
+        font-size: 12px;
+    }
+    .sidebar-name {
+        margin-left: 0;
+        font-size: 12px;
+    }
+    .upgrade {
+        background-color: black;
+        color: white;
+        width: 100px;
+        height: 35px;
+        padding: 10px;
+        border-radius: 50px;
+        border: solid 1px white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .user-container {
+        background-color: black;
+        height: 35px;
+        width: 100px;
+        border-radius: 50px;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        padding: 10px;
+        cursor: pointer;
+    }
+}

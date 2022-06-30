@@ -1,0 +1,153 @@
+#main {
+    width: 40%;
+    align-items: center;
+    margin: auto;
+}
+#line1 {
+    width: 2000px;
+    margin-right: 0%;
+    margin-bottom: 50px;
+}
+button{
+    display: block;
+    width: 90%;
+    margin: 20px;
+    height: 50px;
+    border-radius: 25px;
+}
+input{
+    display: block;
+    width: 90%;
+    margin: 20px;
+    height: 50px;
+}
+label{
+    margin: 20px;
+}
+#line {
+    display: flex;
+}
+#line >hr {
+    width: 200px;
+    display: flex;
+    height: 0%;
+ 
+  }
+  #line > p{
+    display: flex;
+  }
+  #topimage {
+
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px;
+    justify-content: center;
+ 
+  }
+  #check {
+    display: flex;
+    
+    
+    width: fit-content;
+    padding: 0%;
+
+  }
+  #check > input{
+display: flex;
+margin: 0%;
+margin-left: 0%;
+margin-right: 0%;
+padding: 0%;
+width: min-content;
+height: 15px;
+align-items: flex-start;
+
+
+  }
+  #check > p{
+    display: flex;
+    margin: 0px;
+    margin-left: 5px;
+    width: auto;
+    
+  }
+  #one{
+    background-color:rgb(59, 89, 152);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: white;
+  }
+  #two {
+    background-color: rgba(0, 0, 0, 0.9);;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+   
+  }
+  #one > img{
+    margin-right: 5px;
+  }
+  #two > img{
+    height: 25px;
+    margin-right: 5px;
+  }
+  #three{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-subdued,#6a6a6a);
+    border: 2px solid var(--text-subdued,#6a6a6a);
+  }
+  #four{
+    color: var(--text-subdued,#6a6a6a);
+    border: 2px solid var(--text-subdued,#6a6a6a);
+  }
+  #three > img{
+    height: 20px;
+    margin-right: 5px;
+  }
+  #login {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+  }
+  #login > button{
+    display: flex;
+    width: 20%;
+    margin: auto;
+    margin-right: 5%;
+    text-align: center;
+   justify-content: center;
+   align-items: center;
+    
+  }
+  #five {
+    background-color: var(--background-base,#1ed760);;
+    color: black;
+    border: none;
+     border: 2px solid var(--text-subdued,#6a6a6a);
+  }
+  #six {
+    background-color: white;
+    color: var(--text-subdued,#6a6a6a);
+    border: 2px solid var(--text-subdued,#6a6a6a);;
+  }
+  p{
+    margin: 20px;
+  }
+  @media screen and (max-width:900px) {
+    #main {
+      width: 100%;
+    }
+  }
