@@ -24,7 +24,7 @@
     display: flex;
 }
 
-#duration {
+.duration {
     color: #b3b3b3;
     fill: currentcolor;
 
@@ -38,7 +38,7 @@
    grid-template-columns: repeat( 5 , 1fr );
    margin: 30px;
    color: #b3b3b3;
-   
+   font-family:'Times New Roman', Times, serif;
 }
 .music>div{
 background-color: transparent;
@@ -51,6 +51,7 @@ display: flex;
     justify-content: center;
     align-items: center;
     display: flex;
+   
 }
 .song > div{
     font-size: x-small;
@@ -73,13 +74,7 @@ display: flex;
    
 
 }
-.playbutton:hover + img {
-   display: block;
-   height: 25px; 
-   width: 25px;
-   background-color: aqua;
-   background-color: transparent;
-}
+
 
 
 body {
