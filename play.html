@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="index.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .songtext:hover {
+            color: greenyellow;
+        }
+
+        .index:hover>p {
+           display: none;
+
+        }
+        .playbutton {
+            display: none;
+        }
+        .index:hover>button{
+            display: block;
+            height: auto;
+        }
+        @media screen  and (max-width:700px){
+           body{
+            margin: 0px;
+           
+            }
+            #topicons {
+                margin: 0px;
+            }
+           span {
+                display: none;
+            }
+           #title {
+            grid-template-columns: repeat(3 , 1fr);
+           }
+           #duration {
+            display: none;
+            visibility: hidden;
+           }
+    
+}
+    </style>
+</head>
+
+<body>
+
+
+    <div id="head">
+        <img src="https://daily-mix.scdn.co/covers/on_repeat/PZN_On_Repeat2_LARGE-en.jpg" alt="">
+        <div id="headtext">
+            <h6>Playlist</h6>
+            <h1>On Repeat</h1>
+            <h6>Songs you love right now</h6>
+            <p><span>Spotify .</span> 15 songs, 53min 24sec</p>
+
+        </div>
+    </div>
+
+
+    <div id="musiccontainer">
+        <div id="topicons">
+            <img src="data:image/png;base64,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"
+                alt="greenbutton">
+
+            <img src="heart.png" alt="heart">
+
+            <svg role="img" height="32" width="32" viewBox="0 0 24 24" class="Svg-sc-1bi12j5-0 EQkJl">
+                <path
+                    d="M4.5 13.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm15 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm-7.5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+                </path>
+            </svg>
+        </div>
+        <div id="title">
+            <div> # </div>
+            <div id="hash">
+                <h5 id="t1"> TITLE</h5>
+            </div>
+
+            <div>
+                <h5>ALBUM</h5>
+            </div>
+            <div>
+                <h5><span>DATE ADDED</span></h5>
+            </div>
+            <div id="duration"><svg height="16" width="16" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 EQkJl">
+                    <path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8z"></path>
+                    <path d="M8 3.25a.75.75 0 01.75.75v3.25H11a.75.75 0 010 1.5H7.25V4A.75.75 0 018 3.25z">
+                    </path>
+                </svg>
+            </div>
+
+        </div>
+
+        <div class="music">
+            <div class="index">
+
+                <button id="1" class="playbutton">
+
+                    <img src="playbutton.png" alt="">
+                </button>
+                <p>#1</p>
+            </div>
+            <div class="song">
+                <div class="songimg">
+                    <img src="" alt="">
+                </div>
+                <div class="songtext">
+                    <h1>flex:all in my head</h1>
+
+                </div>
+            </div>
+            <div class="album">Flex</div>
+            <div class="date"><span>1 July 2022</span></div>
+            <div class="duration"><span>3.05</span></div>
+        </div>
+        <div class="music">
+            <div class="index">
+
+                <button id="2" class="playbutton">
+
+                    <img src="playbutton.png" alt="">
+                </button>
+                <p>#2</p>
+            </div>
+            <div class="song">
+                <div class="songimg">
+                    <img src="https://i.scdn.co/image/ab67616d0000485192cc21b3b1386ef3c810894d" alt="">
+                </div>
+                <div class="songtext">
+                    <h1>legion</h1>
+
+                </div>
+            </div>
+            <div class="album">legion</div>
+            <div class="date"><span>1 July 2022</span></div>
+            <div class="duration"><span>3.05</span></div>
+        </div>
+        <div class="music">
+            <div class="index">
+
+                <button id="3" class="playbutton">
+                    <img src="playbutton.png" alt="">
+                </button>
+                <p>#3</p>
+            </div>
+            <div class="song">
+                <div class="songimg">
+                    <img src="" alt="">
+                </div>
+                <div class="songtext">
+                    <h1>let me love you</h1>
+
+                </div>
+            </div>
+            <div class="album">Let me love you</div>
+            <div class="date"><span>1 July 2022</span></div>
+            <div class="duration"><span>3.05</span></div>
+        </div>
+        <div class="music">
+            <div class="index">
+
+                <button id="4" class="playbutton">
+                    <img src="playbutton.png" alt="">
+                </button>
+                <p>#4</p>
+            </div>
+            <div class="song">
+                <div class="songimg">
+                    <img src="" alt="">
+                </div>
+                <div class="songtext">
+                    <h1>Beautiful mistake</h1>
+
+                </div>
+            </div>
+            <div class="album">Beautiful Mistake</div>
+            <div class="date"><span>1 July 2022</span></div>
+            <div class="duration"><span>3.05</span></div>
+        </div>
+        <div class="music">
+            <div class="index">
+
+                <button id="5" class="playbutton">
+                    <img src="playbutton.png" alt="">
+                </button>
+                <p>#5</p>
+            </div>
+            <div class="song">
+                <div class="songimg">
+                    <img src="" alt="">
+                </div>
+                <div class="songtext">
+                    <h1>Ritmo</h1>
+
+                </div>
+            </div>
+            <div class="album">Ritmo</div>
+            <div class="date"><span>1 July 2022</span></div>
+            <div class="duration"><span>3.05</span></div>
+        </div>
+        <div class="music">
+            <div class="index">
+
+                <button id="6" class="playbutton">
+                    <img src="playbutton.png" alt="">
+                </button>
+                <p>#6</p>
+            </div>
+            <div class="song">
+                <div class="songimg">
+                    <img src="https://i.scdn.co/image/ab67616d0000485192cc21b3b1386ef3c810894d" alt="">
+                </div>
+                <div class="songtext">
+                    <h1>Worth it</h1>
+
+                </div>
+            </div>
+            <div class="album">Worth it</div>
+            <div class="date"><span>1 July 2022</span></div>
+            <div class="duration"><span>3.05</span></div>
+        </div>
+        <div class="music">
+            <div class="index">
+
+                <button id="7" class="playbutton">
+                    <img src="playbutton.png" alt="">
+                </button>
+                <p>#7</p>
+            </div>
+            <div class="song">
+                <div class="songimg">
+                    <img src="https://i.scdn.co/image/ab67616d0000485192cc21b3b1386ef3c810894d" alt="">
+                </div>
+                <div class="songtext">
+                    <h1>Heat wave</h1>
+
+                </div>
+            </div>
+            <div class="album">Heat Waves</div>
+            <div class="date"><span>1 July 2022</span></div>
+            <div class="duration"><span>3.05</span></div>
+        </div>
+        <div class="music">
+            <div class="index">
+
+                <button id="8" class="playbutton">
+                    <img src="playbutton.png" alt="">
+                </button>
+                <p>#8</p>
+            </div>
+            <div class="song">
+                <div class="songimg">
+                    <img src="https://i.scdn.co/image/ab67616d0000485192cc21b3b1386ef3c810894d" alt="">
+                </div>
+                <div class="songtext">
+                    <h1>illegal weapon</h1>
+
+                </div>
+            </div>
+            <div class="album">Illegal Weapon</div>
+            <div class="date"><span>1 July 2022</span></div>
+            <div class="duration"><span>3.05</span></div>
+        </div>
+        <div class="music">
+            <div class="index">
+
+                <button id="9" class="playbutton">
+                    <img src="playbutton.png" alt="">
+                </button>
+                <p>#9</p>
+            </div>
+            <div class="song">
+                <div class="songimg">
+                    <img src="https://i.scdn.co/image/ab67616d0000485192cc21b3b1386ef3c810894d" alt="">
+                </div>
+                <div class="songtext">
+                    <h1>Misery</h1>
+
+                </div>
+            </div>
+            <div class="album">Misery</div>
+            <div class="date"><span>1 July 2022</span></div>
+            <div class="duration"><span>3.05</span></div>
+        </div>
+        <div class="music">
+            <div class="index">
+
+                <button id="10" class="playbutton">
+                    <img src="playbutton.png" alt="">
+                </button>
+                <p>#10</p>
+            </div>
+            <div class="song">
+                <div class="songimg">
+                    <img src="https://i.scdn.co/image/ab67616d0000485192cc21b3b1386ef3c810894d" alt="">
+                </div>
+                <div class="songtext">
+                    <h1>I am in love</h1>
+
+                </div>
+            </div>
+            <div class="album">I am in Love</div>
+            <div class="date"><span>1 July 2022</span></div>
+            <div class="duration"><span>3.05</span></div>
+        </div>
+        <div class="music">
+            <div class="index">
+
+                <button id="5" class="playbutton">
+                    <img src="playbutton.png" alt="">
+                </button>
+                <p>#11</p>
+            </div>
+            <div class="song">
+                <div class="songimg">
+                    <img src="https://i.scdn.co/image/ab67616d0000485192cc21b3b1386ef3c810894d" alt="">
+                </div>
+                <div class="songtext">
+                    <h1>Flex</h1>
+
+                </div>
+            </div>
+            <div class="album">Felx</div>
+            <div class="date"><span>1 July 2022</span></div>
+            <div class="duration"><span>3.05</span></div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
+<script src="index.js"></script>

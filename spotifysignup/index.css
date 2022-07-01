@@ -1,0 +1,249 @@
+hr {
+    width: 200px;
+    display: flex;
+    height: 0%;
+ 
+  }
+ 
+  button~div {
+ 
+    display: flex;
+  }
+ 
+  button {
+    display: block;
+    margin: auto;
+    height: fit-content;
+ 
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 28px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 60%;
+  }
+ 
+  #suwf,
+  #suwg {
+    width: 70% fit-content;
+    height: max-content;
+  }
+ 
+  button:first-of-type {
+    background-color: rgb(64, 90, 147);
+    border: none;
+    color: white;
+  }
+ 
+  #one :nth-child(4) {
+    background-color: white;
+  }
+ 
+  img {
+    height: 30px;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+ 
+  #one {
+    width: 40%;
+    margin: auto;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    padding-right: 0px;
+  }
+ 
+  #one>#line {
+    width: 80%;
+  }
+ 
+  div {
+    margin: auto;
+ 
+  }
+ 
+  h1 {
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 35px;
+  }
+ 
+  #topimage {
+ 
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    height: 40px;
+    justify-content: center;
+ 
+  }
+ 
+  form>input {
+    display: block;
+    margin: 15px 15px 0px 15px;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+ 
+  }
+ 
+  form>label {
+    margin: 20% 0% 20% 0%;
+    margin-top: 50px;
+  }
+ 
+  #phonedirect {
+    text-decoration: underline;
+    color: green;
+  }
+ 
+  p {
+    margin: 0px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+ 
+  #date {
+    display: flex;
+ 
+  }
+ 
+  #date>div {
+    width: 25%;
+    margin: 15px;
+  }
+ 
+  #date>div>input {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin: 10px auto 20px auto;
+    border-radius: 5px;
+ 
+  }
+ 
+  #date>div>select {
+    height: 50px;
+    margin: 10px auto 20px auto;
+    border-radius: 5px;
+  }
+ 
+  #gender {
+    display: flex;
+  }
+ 
+  #gender>input {
+    display: flex;
+    width: 5%;
+    margin: 10px;
+  }
+ 
+  #consent {
+ 
+    margin: 15px;
+    background-color: white;
+  }
+ 
+  #consent>div {
+    padding: 0px;
+    margin-right: 0px;
+    display: flex;
+  }
+ 
+  #consent>div>input {
+    height: 20px;
+    margin-right: 0px;
+ 
+ 
+  }
+ 
+  a {
+    color: green;
+  }
+ 
+  #captcha {
+    display: flex;
+ 
+    width: 60%;
+    margin: 15px;
+    background-color: rgb(235, 229, 229);
+    padding: 10px;
+  }
+ 
+  #captchainput {
+ 
+    width: 100%;
+    display: flex;
+  }
+ 
+  #captchainput>input {
+    display: flex;
+  }
+ 
+  #captchainput>p {
+ 
+    align-self: center;
+    font-size: 18px;
+    margin-right: 10px;
+    width: max-content;
+    display: flex;
+  }
+ 
+  #cptimg {
+    font: 10px sans-serif;
+    align-items: flex-end;
+    margin-left: 20px;
+    width: fit-content;
+ 
+  }
+ 
+  #cptimg>img {
+    margin: auto;
+    margin-bottom: 5px;
+  }
+ 
+  #cptimg>p {
+    margin: auto;
+    margin-bottom: 5px;
+  }
+ 
+  #signup {
+    width: 30%;
+    height: 60px;
+    font-size: medium;
+    padding: 20px;
+    background-color: rgb(30, 211, 30);
+    justify-content: center;
+  }
+ 
+  form~p {
+    text-align: center;
+    margin: 40px;
+  }
+ 
+  #suwf:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+  }
+ 
+  #signup:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+  }
+ 
+  #suwg:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+  }
+ 
+  @media screen and (max-width:736px) {
+    #one {
+      width: 90%;
+    }
+  }

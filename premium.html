@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="premium.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        nav {
+    font-family: 'Poppins';
+}
+footer {
+    font-family: 'Poppins';
+}
+
+
+svg {
+    fill: #fff;
+    width: 140px; 
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 10vh;
+    background-color: #000;
+}
+.nav_links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: .5rem 1.5rem;
+    font-size: .95rem;
+}
+/* .line {
+    display: inline-block;
+    width: 1px;
+    height: 1rem;
+    background-color: #fff;
+} */
+a:hover,
+a:hover i {
+    color: #1ED760;
+}
+.conto{
+    background-image: url(bg.jpg);
+ }
+.content {
+    width: 100%;
+    height: 100vh;
+    background-color: #2941AB;
+    color: #1ED760;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.content h1 {
+    font-size: 9rem;
+    transform: translateX(-10%);
+}
+.content h1 span {
+    display: block;
+    transform: translateX(30%);
+}
+.content button {
+    background-color: #1ed760;
+    color: #2941ab;
+    padding: .7rem 2rem;
+    border-radius: 100vw;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 100ms ease-in-out box-shadow;
+}
+.content button:hover {
+    transform: scale(1.05);
+}
+footer {
+    position: relative;
+    background-color: #000;
+    /* min-height: 60vh; */
+    width: 100%;
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    place-items: center;
+    align-items: flex-start;
+}
+footer * {
+    text-decoration: none;
+    color: #fff;
+}
+footer h5 {
+    opacity: .4;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .05rem;
+}
+
+.web_links_container {
+    display: flex;
+    text-align: left;
+}
+.web_links {
+    margin-left: 3rem;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 3rem;
+}
+.web_links > div {
+    display: flex;
+    flex-direction: column;
+}
+.web_links a,
+.web_links h5 {
+    margin: .5rem 0;
+    font-size: .9rem;
+}
+.foot-space{
+    margin-top: 40px;
+}
+
+.social_links {
+    display: flex;
+    margin-right: 10rem;
+}
+.social_links a {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #222326;
+    border-radius: 50%;
+    margin: 0 .5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.other_links,
+.copyright {
+    opacity: .5;
+    font-size: .7rem;
+    margin-top: 6rem;
+}
+.other_links a {
+    margin: 0 .5rem;
+}
+
+.copyright {
+    margin-top: 5rem;
+    text-align: right;
+}
+.copyright a {
+    display: block;
+    margin-bottom: .5rem;
+}
+.nav-new{
+    margin:0px;
+}
+    </style>
+    
+</head>
+
+<body class="nav-new">
+    <nav >
+        <svg viewBox="0 0 63 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin meet">
+            <g fill-rule="evenodd" class="svelte-1gcdbl9">
+                <path
+                    d="M61.842 9.506a1.02 1.02 0 0 1-1.023-1.024c0-.562.453-1.03 1.029-1.03a1.02 1.02 0 0 1 1.023 1.024 1.03 1.03 0 0 1-1.029 1.03m.006-1.952a.915.915 0 0 0-.922.928c0 .51.394.921.916.921a.916.916 0 0 0 .922-.927.908.908 0 0 0-.916-.922m.226 1.027l.29.406h-.244l-.26-.372h-.225v.372h-.204V7.912h.48c.249 0 .413.128.413.343 0 .176-.102.284-.25.326m-.172-.485h-.267v.34h.267c.133 0 .212-.065.212-.17 0-.11-.08-.17-.212-.17m-12.804-3.52a1.043 1.043 0 1 0-.001 2.086 1.043 1.043 0 0 0 0-2.087m.72 2.89h-1.454a.107.107 0 0 0-.106.107v6.346c0 .06.047.107.106.107h1.455a.107.107 0 0 0 .107-.107V7.572a.107.107 0 0 0-.107-.107m3.233.006v-.2c0-.592.227-.856.736-.856.303 0 .546.06.82.152a.106.106 0 0 0 .14-.102V5.24a.107.107 0 0 0-.076-.102 3.993 3.993 0 0 0-1.21-.174c-1.343 0-2.053.757-2.053 2.188v.308h-.699a.107.107 0 0 0-.107.106v1.257c0 .059.048.107.107.107h.699v4.99c0 .058.047.106.106.106h1.455a.107.107 0 0 0 .106-.107v-4.99h1.358l2.081 4.99c-.236.523-.468.628-.785.628-.257 0-.527-.077-.803-.228a.109.109 0 0 0-.084-.008.106.106 0 0 0-.063.058l-.493 1.081a.106.106 0 0 0 .045.138c.515.279.98.398 1.554.398 1.074 0 1.668-.5 2.191-1.847L60.6 7.617a.106.106 0 0 0-.099-.146h-1.514a.107.107 0 0 0-.1.072l-1.552 4.431-1.7-4.434a.106.106 0 0 0-.099-.069h-2.485m-5.577-.006h-1.6V5.828a.106.106 0 0 0-.107-.106h-1.455a.107.107 0 0 0-.106.106v1.637h-.7a.106.106 0 0 0-.106.107v1.25c0 .059.048.107.106.107h.7v3.234c0 1.308.65 1.97 1.934 1.97.522 0 .954-.107 1.362-.338a.106.106 0 0 0 .054-.093v-1.19a.106.106 0 0 0-.154-.096c-.28.141-.551.206-.854.206-.467 0-.675-.211-.675-.686V8.929h1.6a.106.106 0 0 0 .107-.107v-1.25a.106.106 0 0 0-.106-.107m-7.671-.133c-1.96 0-3.497 1.51-3.497 3.437 0 1.907 1.526 3.4 3.473 3.4 1.967 0 3.508-1.504 3.508-3.424 0-1.914-1.53-3.413-3.484-3.413m0 5.362c-1.043 0-1.83-.838-1.83-1.95 0-1.115.76-1.924 1.806-1.924 1.05 0 1.84.838 1.84 1.95 0 1.115-.763 1.924-1.816 1.924m-7.014-5.362c-.82 0-1.492.323-2.046.984v-.744a.107.107 0 0 0-.106-.107h-1.455a.107.107 0 0 0-.106.107v8.27c0 .058.048.106.106.106h1.455a.107.107 0 0 0 .106-.106v-2.61c.555.621 1.227.925 2.046.925 1.522 0 3.063-1.172 3.063-3.412s-1.54-3.413-3.063-3.413m1.372 3.413c0 1.14-.703 1.937-1.709 1.937-.995 0-1.745-.833-1.745-1.937s.75-1.937 1.745-1.937c.99 0 1.71.814 1.71 1.937m-8.437-1.81c-1.624-.388-1.913-.66-1.913-1.231 0-.54.508-.903 1.264-.903.732 0 1.459.275 2.22.843a.107.107 0 0 0 .15-.023l.794-1.119a.107.107 0 0 0-.02-.144c-.906-.728-1.927-1.081-3.12-1.081-1.755 0-2.98 1.052-2.98 2.559 0 1.615 1.057 2.187 2.884 2.628 1.554.358 1.817.658 1.817 1.195 0 .594-.53.963-1.385.963-.948 0-1.721-.32-2.587-1.068a.11.11 0 0 0-.078-.026.105.105 0 0 0-.073.038l-.89 1.058a.105.105 0 0 0 .011.148 5.303 5.303 0 0 0 3.581 1.373c1.89 0 3.112-1.033 3.112-2.631 0-1.351-.807-2.098-2.787-2.58M9.507.305a9.41 9.41 0 1 0 0 18.82 9.41 9.41 0 0 0 0-18.82m4.316 13.572a.586.586 0 0 1-.807.195c-2.21-1.35-4.99-1.655-8.266-.907a.586.586 0 1 1-.261-1.143c3.584-.82 6.659-.467 9.139 1.049.276.169.363.53.195.806m1.15-2.562a.734.734 0 0 1-1.008.242c-2.529-1.555-6.385-2.005-9.377-1.097a.735.735 0 0 1-.426-1.404c3.418-1.037 7.666-.534 10.57 1.25a.734.734 0 0 1 .242 1.01m.1-2.669C12.04 6.846 7.036 6.68 4.141 7.56a.88.88 0 1 1-.511-1.684c3.323-1.01 8.849-.814 12.34 1.258a.88.88 0 0 1-.898 1.514">
+                </path>
+            </g>
+        </svg>
+        <div class="nav_links">
+            <a href="premium.html">Premium</a>
+            <a href="support.html">Support</a>
+            <a href="download.html">Download</a>
+            <span class="line">.</span>
+            <a href="spotifysignup/index.html">Sign up</a>
+            <a href="spotifyloginpage/index.html">Log in</a>
+        </div>
+    </nav>
+    <!-- top div Blue BGC -->
+    <div class="top">
+        <div>
+            <h1 class="head1">
+                <br>Get Premium free for 1 month
+            </h1>
+        </div>
+        <div>
+            <h2 class="head2">
+                Just ₹119/month after. Debit and credit cards accepted. Cancel anytime.
+            </h2>
+        </div>
+        <div class="btndiv">
+            <button class="Bbtn"><b> GET STARTED </b></button>
+            <button class="Wbtn"><b> SEE OTHER PLANS</b></button>
+        </div>
+        <div>
+            <p style="font-size: 12px; padding-bottom: 50px;"><span style="text-decoration: underline;"> Terms and
+                    conditions apply.</span> 1 month free not available for users who have already tried Premium.</p>
+        </div>
+    </div>
+    <!-- 2nd Black BGC -->
+    <div class="black">
+        <div>
+            <h1 class="head1"> <br>Introducing Premium Mini</h1>
+        </div>
+        <div>
+            <h2 class="head2">
+                ₹7 for 1 day. <br>₹25 for 1 week.
+            </h2>
+        </div>
+        <div class="btndiv">
+            <button class="btn2"> <b> GET MINI</b></button>
+        </div>
+        <div>
+            <p style="padding-bottom: 20px; text-decoration: underline;">Terms and conditions apply.</p>
+        </div>
+    </div>
+
+    <div class="white">
+        <div >
+            <h2 class="head1" style="font-size: 40px;"><br> The power of Premium</h2>
+        </div>
+    </div>
+    <!-- White Flex -->
+    <div class="flex">
+        <div class="flexdiv">
+            <img class="logo" src="https://i.scdn.co/image/ab671c3d0000f43098292b95d24a697c20df5137" alt="1st">
+            <p class="boldPara"><b>Ad-free music listening</b></p>
+            <p class="para">Enjoy uninterrupted music.</p>
+        </div>
+        <div class="flexdiv">
+            <img class="logo" src="https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f" alt="1st">
+            <p class="boldPara"><b>Offline playback</b></p>
+            <p class="para">Enjoy uninterrupted music.</p>
+        </div>
+        <div class="flexdiv">
+            <img class="logo" src="https://i.scdn.co/image/ab671c3d0000f4306998d3ffd58aad6da6afdf67" alt="1st">
+            <p class="boldPara"><b>Play everywhere</b></p>
+            <p class="para">Save your data by listening offline.</p>
+        </div>
+        <div class="flexdiv">
+            <img class="logo" src="https://i.scdn.co/image/ab671c3d0000f430cd6c528745e510c5be63a012" alt="1st">
+            <p class="boldPara"><b>
+                    Pay your way</b></p>
+            <p class="para">Prepay with Paytm, UPI, and more.
+
+            </p>
+        </div>
+    </div>
+
+    <div class="music">
+        <div>
+            <h1 class="head1">
+                <br>Connect with music culture
+            </h1>
+        </div>
+        <div class="flex">
+            <div class="flexdiv">
+                <img class="logo" src="https://i.scdn.co/image/ab671c3d0000f4309894eb4527215b7fde79e673" alt="1st">
+                <p class="boldPara"><b>Bollywood Butter</b></p>
+                <p class="para">The finest quality Bollywood music handpicked for you.</p>
+            </div>
+            <div class="flexdiv">
+                <img class="logo" src="https://i.scdn.co/image/ab671c3d0000f4308180688c87bd403b7a6da8c7" alt="1st">
+                <p class="boldPara"><b>Punjabi 101</b></p>
+                <p class="para">The ultimate Punjabi hits.</p>
+            </div>
+            <div class="flexdiv">
+                <img class="logo" src="https://i.scdn.co/image/ab671c3d0000f430ed50366d5d8ba3e7d12fca43" alt="1st">
+                <p class="boldPara"><b>Tollywood Pearls</b></p>
+                <p class="para">The finest music from Telugu films.</p>
+            </div>
+            <div class="flexdiv">
+                <img class="logo" src="https://i.scdn.co/image/ab671c3d0000f430330523a1b60c1d5e0b31935f" alt="1st">
+                <p class="boldPara"><b>
+                    Hot Hits India</b></p>
+                <p class="para">50 hottest hits from across the globe.
+    
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    <!-- pricing -->
+    <div class="price" >
+        <div>
+            <h1>Pick your Premium</h1>
+        </div>
+        <div>
+            <h3>Listen without limits on your phone, speaker, and other devices.</h3>
+        </div>
+        
+        <div class="flex">
+            <!-- 1 -->
+            <div class="premium">
+                <p class="borderBox"><span> One-time plans available</span></p>
+                <h3 class="planName">Mini</h3>
+                <p class="days">From ₹7/day</p>
+                <p class="days">1 account</p>
+                <hr class="line">
+                <ul class="list">
+                    <li class="listpoint" ><span class="span"> Ad-free music listening on mobile</span></li>
+                    <li class="listpoint"> <span class="span"> Group Session</span> </li>
+                    <li class="listpoint"> <span class="span">Download 30 songs on 1 mobile device </span></li>
+                </ul>
+                <button class="premBtn">VIEW PLANS</button>
+                <p class="terms">Terms and conditions apply.</p>
+            </div>
+            <!-- 2 -->
+            <div class="premium">
+                <p class="borderBox"><span> One-time plans available</span></p>
+                <h3 class="planName">Individual</h3>
+                <p class="days">From ₹7/day</p>
+                <p class="days">1 account</p>
+                <hr class="line">
+                <ul class="list">
+                    <li class="listpoint" ><span class="span"> Ad-free music listening on mobile</span></li>
+                    <li class="listpoint"> <span class="span"> Group Session</span> </li>
+                    <li class="listpoint"> <span class="span">Download 30 songs on 1 mobile device </span></li>
+                </ul>
+                <button class="premBtn">VIEW PLANS</button>
+                <p class="terms">Terms and conditions apply.</p>
+            </div>
+            <!-- 3 -->
+            <div class="premium">
+                <p class="borderBox"><span> One-time plans available</span></p>
+                <h3 class="planName">Duo</h3>
+                <p class="days">From ₹7/day</p>
+                <p class="days">1 account</p>
+                <hr class="line">
+                <ul class="list">
+                    <li class="listpoint" ><span class="span"> Ad-free music listening on mobile</span></li>
+                    <li class="listpoint"> <span class="span"> Group Session</span> </li>
+                    <li class="listpoint"> <span class="span">Download 30 songs on 1 mobile device </span></li>
+                </ul>
+                <button class="premBtn">VIEW PLANS</button>
+                <p class="terms">Terms and conditions apply.</p>
+            </div>
+            <!-- 4 -->
+            <div class="premium">
+                <p class="borderBox"><span> One-time plans available</span></p>
+                <h3 class="planName">Family</h3>
+                <p class="days">From ₹7/day</p>
+                <p class="days">1 account</p>
+                <hr class="line">
+                <ul class="list">
+                    <li class="listpoint" ><span class="span"> Ad-free music listening on mobile</span></li>
+                    <li class="listpoint"> <span class="span"> Group Session</span> </li>
+                    <li class="listpoint"> <span class="span">Download 30 songs on 1 mobile device </span></li>
+                </ul>
+                <button class="premBtn">VIEW PLANS</button>
+                <p class="terms">Terms and conditions apply.</p>
+            </div>
+            
+       
+    </div>
+  <!-- footer start -->
+  <footer class="foot-space">
+    <div class="web_links_container">
+        <svg viewBox="0 0 63 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin meet">
+            <g fill-rule="evenodd" class="svelte-1gcdbl9">
+                <path
+                    d="M61.842 9.506a1.02 1.02 0 0 1-1.023-1.024c0-.562.453-1.03 1.029-1.03a1.02 1.02 0 0 1 1.023 1.024 1.03 1.03 0 0 1-1.029 1.03m.006-1.952a.915.915 0 0 0-.922.928c0 .51.394.921.916.921a.916.916 0 0 0 .922-.927.908.908 0 0 0-.916-.922m.226 1.027l.29.406h-.244l-.26-.372h-.225v.372h-.204V7.912h.48c.249 0 .413.128.413.343 0 .176-.102.284-.25.326m-.172-.485h-.267v.34h.267c.133 0 .212-.065.212-.17 0-.11-.08-.17-.212-.17m-12.804-3.52a1.043 1.043 0 1 0-.001 2.086 1.043 1.043 0 0 0 0-2.087m.72 2.89h-1.454a.107.107 0 0 0-.106.107v6.346c0 .06.047.107.106.107h1.455a.107.107 0 0 0 .107-.107V7.572a.107.107 0 0 0-.107-.107m3.233.006v-.2c0-.592.227-.856.736-.856.303 0 .546.06.82.152a.106.106 0 0 0 .14-.102V5.24a.107.107 0 0 0-.076-.102 3.993 3.993 0 0 0-1.21-.174c-1.343 0-2.053.757-2.053 2.188v.308h-.699a.107.107 0 0 0-.107.106v1.257c0 .059.048.107.107.107h.699v4.99c0 .058.047.106.106.106h1.455a.107.107 0 0 0 .106-.107v-4.99h1.358l2.081 4.99c-.236.523-.468.628-.785.628-.257 0-.527-.077-.803-.228a.109.109 0 0 0-.084-.008.106.106 0 0 0-.063.058l-.493 1.081a.106.106 0 0 0 .045.138c.515.279.98.398 1.554.398 1.074 0 1.668-.5 2.191-1.847L60.6 7.617a.106.106 0 0 0-.099-.146h-1.514a.107.107 0 0 0-.1.072l-1.552 4.431-1.7-4.434a.106.106 0 0 0-.099-.069h-2.485m-5.577-.006h-1.6V5.828a.106.106 0 0 0-.107-.106h-1.455a.107.107 0 0 0-.106.106v1.637h-.7a.106.106 0 0 0-.106.107v1.25c0 .059.048.107.106.107h.7v3.234c0 1.308.65 1.97 1.934 1.97.522 0 .954-.107 1.362-.338a.106.106 0 0 0 .054-.093v-1.19a.106.106 0 0 0-.154-.096c-.28.141-.551.206-.854.206-.467 0-.675-.211-.675-.686V8.929h1.6a.106.106 0 0 0 .107-.107v-1.25a.106.106 0 0 0-.106-.107m-7.671-.133c-1.96 0-3.497 1.51-3.497 3.437 0 1.907 1.526 3.4 3.473 3.4 1.967 0 3.508-1.504 3.508-3.424 0-1.914-1.53-3.413-3.484-3.413m0 5.362c-1.043 0-1.83-.838-1.83-1.95 0-1.115.76-1.924 1.806-1.924 1.05 0 1.84.838 1.84 1.95 0 1.115-.763 1.924-1.816 1.924m-7.014-5.362c-.82 0-1.492.323-2.046.984v-.744a.107.107 0 0 0-.106-.107h-1.455a.107.107 0 0 0-.106.107v8.27c0 .058.048.106.106.106h1.455a.107.107 0 0 0 .106-.106v-2.61c.555.621 1.227.925 2.046.925 1.522 0 3.063-1.172 3.063-3.412s-1.54-3.413-3.063-3.413m1.372 3.413c0 1.14-.703 1.937-1.709 1.937-.995 0-1.745-.833-1.745-1.937s.75-1.937 1.745-1.937c.99 0 1.71.814 1.71 1.937m-8.437-1.81c-1.624-.388-1.913-.66-1.913-1.231 0-.54.508-.903 1.264-.903.732 0 1.459.275 2.22.843a.107.107 0 0 0 .15-.023l.794-1.119a.107.107 0 0 0-.02-.144c-.906-.728-1.927-1.081-3.12-1.081-1.755 0-2.98 1.052-2.98 2.559 0 1.615 1.057 2.187 2.884 2.628 1.554.358 1.817.658 1.817 1.195 0 .594-.53.963-1.385.963-.948 0-1.721-.32-2.587-1.068a.11.11 0 0 0-.078-.026.105.105 0 0 0-.073.038l-.89 1.058a.105.105 0 0 0 .011.148 5.303 5.303 0 0 0 3.581 1.373c1.89 0 3.112-1.033 3.112-2.631 0-1.351-.807-2.098-2.787-2.58M9.507.305a9.41 9.41 0 1 0 0 18.82 9.41 9.41 0 0 0 0-18.82m4.316 13.572a.586.586 0 0 1-.807.195c-2.21-1.35-4.99-1.655-8.266-.907a.586.586 0 1 1-.261-1.143c3.584-.82 6.659-.467 9.139 1.049.276.169.363.53.195.806m1.15-2.562a.734.734 0 0 1-1.008.242c-2.529-1.555-6.385-2.005-9.377-1.097a.735.735 0 0 1-.426-1.404c3.418-1.037 7.666-.534 10.57 1.25a.734.734 0 0 1 .242 1.01m.1-2.669C12.04 6.846 7.036 6.68 4.141 7.56a.88.88 0 1 1-.511-1.684c3.323-1.01 8.849-.814 12.34 1.258a.88.88 0 0 1-.898 1.514">
+                </path>
+            </g>
+        </svg>
+        <div class="web_links">
+            <div class="company">
+                <h5>Company</h5>
+                <a href="#">About</a>
+                <a href="#">Jobs</a>
+                <a href="#">For the Record</a>
+            </div>
+            <div class="communities">
+                <h5>Communities</h5>
+                <a href="#">For Artists</a>
+                <a href="#">Developers</a>
+                <a href="#">Advertising</a>
+                <a href="#">Investors</a>
+                <a href="#">Vendors</a>
+            </div>
+            <div class="useful_links">
+                <h5>Useful Links</h5>
+                <a href="support.html">Support</a>
+                <a href="#">Web Player</a>
+                <a href="#">Free Mobile App</a>
+            </div>
+        </div>
+    </div>
+    <div class="social_links">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+    <div class="other_links">
+        <a href="#">Legal</a>
+        <a href="#">Privacy Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookies</a>
+        <a href="#">About Ads</a>
+        <a href="#">Additional CA Privacy Disclosures</a>
+    </div>
+    <div class="copyright">
+        <a href="#"><i class="fas fa-globe-europe"></i> India (English)</a>
+        <p><i class="far fa-copyright"></i> 2022 Spotify AB</p>
+    </div>
+</footer>
+
+</body>
+
+</html>

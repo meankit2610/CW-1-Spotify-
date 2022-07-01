@@ -1,0 +1,211 @@
+.head1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    padding: 20px 0px 20px 0px;
+}
+
+.head2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.top {
+    /* margin-left: -100%;
+    margin-right: -100%; */
+   
+    padding-top: 40px;
+    width: 100.8%;
+    display: block;
+    padding-left: -10px;
+    margin-bottom: -27px;
+    margin-left: -8px;
+    background-color: #1d75de;
+    text-align: center;
+    color: white;
+    padding-bottom: 50px;
+}
+.music {
+    width: 100.8%;
+    margin-left: -8px;
+    display: block;
+    padding-left: -10px;
+    margin-bottom: 0px;
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.black {
+    /* margin-left: -100%;
+    margin-right: -100%; */
+    width: 100.8%;
+    margin-left: -8px;
+    display: block;
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    /* width: 100%; */
+}
+
+.white {
+    margin-top: 0px;
+    width: 100.8%;
+    /* display: ; */
+    margin-left: -8px;
+    background-color: #ffff;
+    text-align: center;
+    /* color: white; */
+    /* width: 100%; */
+}
+
+.price {
+    margin-top: 0px;
+    width: 100.8%;
+    margin-left: -8px;
+    display: block;
+    background-color: #ffff;
+    text-align: center;
+    /* color: white; */
+    /* width: 100%; */
+}
+
+.box {
+    display: flex;
+}
+.borderBox{
+    border: 1.5px solid #1d75de ;
+    border-spacing: 55px;
+    font-size: 14px;
+    width: 70%;
+    font-weight: 900;
+    color: #1d75de;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.planName{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+.days{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    text-align: left;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 20px;
+}
+ul {
+    list-style: none;
+  }
+  
+ul li:before {
+    /* list-style: none; */
+    content: '✓ ';
+    padding-left: -10px;
+  }
+  .line{
+    margin-top: 50px;
+    width: 85%;
+  }
+  .listpoint{
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+  }
+  .span{
+    padding-left: 10px;
+  }
+  .list{
+    padding-bottom: 20px;
+  }
+  .terms{
+    padding-bottom: 20px; 
+    text-align: left;
+    margin-left: 20px;
+    text-decoration: underline;
+  }
+.flex {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.premium{
+    border-radius: 10px;
+    width: 300px;
+    margin-right: 10px;
+    box-shadow: rgb(0 0 0 / 30%) 0px 0px 8px;
+
+}
+.flexdiv {
+    text-align: center;
+    width: 210px;
+    /* border: 1px solid black; */
+
+}
+
+.boldPara{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 21px;
+
+}
+.para{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+.logo {
+    width: 142px;
+    height: 142px;
+}
+
+.bgc {
+    background-color: #000000;
+    /* margin-left: -100%;
+    margin-right: -100%; */
+}
+
+.btndiv {
+    padding-bottom: 20px;
+}
+.premBtn{
+    /* margin-right: 50px; */
+    
+    margin-top: 60px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: 0px;
+    background-color: #000000;
+    color: white;
+    padding: 14px 80px 14px 80px; 
+}
+.Bbtn {
+    border-radius: 50px;
+    border: 0px;
+    background-color: #000000;
+    color: white;
+    padding: 14px 27px 14px 27px;
+}
+
+.Wbtn {
+    border-radius: 50px;
+    border: 1px solid white;
+    background-color: #1d75de;
+    color: white;
+    padding: 14px 27px 14px 27px;
+}
+
+.btn2 {
+    border-radius: 50px;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    padding: 14px 27px 14px 27px;
+}

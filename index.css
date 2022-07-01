@@ -1,0 +1,137 @@
+#title {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    align-items: center;
+    column-gap: 26px;
+    justify-content: space-between;
+    color: #b3b3b3;
+    background: transparent;
+    border-bottom: 2px solid #b3b3b3;
+
+}
+
+
+#title > #hash {
+    justify-content: left;
+   
+}
+
+#title > div {
+    background-color: transparent;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.duration {
+    color: #b3b3b3;
+    fill: currentcolor;
+
+}
+
+.music {
+    height: 50px;
+    width: 100%;
+    column-gap: 16px;
+    display: grid;
+   grid-template-columns: repeat( 5 , 1fr );
+   margin: 30px;
+   color: #b3b3b3;
+   font-family:'Times New Roman', Times, serif;
+}
+.music>div{
+background-color: transparent;
+
+justify-content: center;
+align-items: center;
+display: flex;
+}
+.music>.index{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+}
+.song > div{
+    font-size: x-small;
+}
+.song {
+    justify-content: space-around;
+}
+.songtext{
+    margin: 10px;
+}
+.playbutton > img {
+    height: 25px; 
+    width: 25px;
+    background-color: transparent;
+    
+}
+.playbutton {
+    border: none;
+    background-color: transparent;
+   
+
+}
+
+
+
+body {
+    background-image: linear-gradient(to top  ,black,black, rgba(0,0,0,0.8),#f307d0 );
+}
+#head {
+height: 300px;
+width: 100%;
+background-color: aqua;
+display: flex;
+align-items: center;
+
+background-color: transparent;
+margin: none;
+}
+#head > img {
+    height: 200px;
+    width: 200px;
+   margin-left: 80px;
+   margin-top: 50px;
+   
+}
+#headtext {
+   margin-left: 20px;
+   margin-top: 20px;
+  color: white;
+   border: none;
+}
+#topicons {
+    background-color: transparent;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 320px;
+}
+#topicons > img {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border-radius: 25px;
+    border: none;
+  
+}
+#t1 {
+    margin-left: 60px;
+    display: block;
+   
+}
+.songimg > img {
+    height: 65px;
+    width: 65px;
+}
+.songtext {
+    
+    width: 100px;
+    
+}
+#duration{
+    color: #b3b3b3;
+}
