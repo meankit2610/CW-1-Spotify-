@@ -1,4 +1,4 @@
-var songIndex = 1;
+
  var audio = new Audio("songs/1.mp3")
 var count=0;
 //   function player(){
@@ -26,27 +26,32 @@ let songs = [
     { name:"flex:all in my head",filePath: "songs/4.mp3", coverPath: "covers/10.jpg"},
 ]
 
-
+var songIndex = 0;
  
-Array.from(document.getElementsByClassName('index')).forEach((element)=>{
+  Array.from(document.getElementsByClassName('playbutton')).forEach((element)=>{
+    //console.log(element.id)
+    var songIndex = 0;
     element.addEventListener('click', (e)=>{ 
-       if(songIndex>10){
-        songIndex=1;
-       }
-        //songIndex = parseInt(e.target.id);
        
-        audio.src = `songs/${songIndex++}.mp3`;
+        songIndex = +(element.id);
+       
+        audio.src = `songs/${songIndex}.mp3`;
+        
        if(count===0){
+       
         audio.play();
         count=1
        }
        else{
+       
      audio.pause();
      count=0
        }
-       
+  
     })
 })
+
+
 songItems.forEach((element, i)=>{ 
     element.getElementsByTagName("img")[0].src = songs[i].coverPath; 
     //element.getElementsByClassName("songName")[0].innerText = songs[i].songName; 
